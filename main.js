@@ -42,7 +42,7 @@ client.on('messageDelete', message =>{ // ивент, когда удаляет�
     .addField("Канал:", `${message.channel}`, false)
     .setFooter(' - ',`${message.author.avatarURL()}`)
     .setTimestamp(message.createdAt);
-  client.channels.cache.get("АЙДИ КАНАЛА С ЛОГАМИ").send(embed); // айди вашего канала с логами
+  client.channels.cache.get("885965620674433107").send(embed); // айди вашего канала с логами
 })
 
 client.on('guildMemberAdd', member =>{ // ивент, когда пользователь присоединяется к серверу https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-guildMemberAdd
@@ -50,7 +50,7 @@ client.on('guildMemberAdd', member =>{ // ивент, когда пользов�
     .setThumbnail(member.user.avatarURL())
     .setTitle(`Привет, ${member.user.username}!`)
     .setDescription(`**Ты попал на мой сервер!
-    Ты наш \`${client.guilds.get("АЙДИ СЕРВЕРА").memberCount}\` участник! **`) // айди вашего сервера               !!!!!!!!!!
+    Ты наш \`${client.guilds.get("884420288085893160").memberCount}\` участник! **`) // айди вашего сервера               !!!!!!!!!!
     .setFooter('Будь всегда на позитиве :3', 'https://cdn.discordapp.com/emojis/590614597610766336.gif?v=1')
     // .addField(`Участвуй в розыгрышах!`, `<#706487236220289054>`, true) // Добавляйте свои каналы по желанию
     // .addField(`Общайся в чате!`, `<#702364684199788625>`, true)
@@ -64,7 +64,7 @@ client.on('guildMemberAdd', member =>{ // ивент, когда пользов�
     .addField('Пользователь:', member.user)
     .setColor('RANDOM')
     member.send(embed);
-    client.channels.cache.get('АЙДИ КАНАЛА С ЛОГАМИ').send(embed2) // айди вашего канала с логами
+    client.channels.cache.get('885965650529488927').send(embed2) // айди вашего канала с логами
 })
 
 client.on('guildMemberRemove', member => { // ивент, когда пользователь выходит с сервера https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-guildMemberRemove
@@ -74,17 +74,17 @@ client.on('guildMemberRemove', member => { // ивент, когда польз�
     .addField('Пользователь:', member.user)
     .setColor('RANDOM')
     member.send(embed);
-    client.channels.cache.get('АЙДИ КАНАЛА С ЛОГАМИ').send(embed) // айди вашего канала с логами
+    client.channels.cache.get('885965669559054347').send(embed) // айди вашего канала с логами
   })
 
 async function change() {
-    let members = client.guilds.cache.get("АЙДИ ВОЙСА").memberCount // сколько людей на сервере + указать айди своего сервера
-    client.channels.cache.get("АЙДИ СЕРВЕРА").setName(`На сервере: ${members}`); // свой айди войса
+    let members = client.guilds.cache.get("3 884418783555493889").memberCount // сколько людей на сервере + указать айди своего сервера
+    client.channels.cache.get("884420288085893160").setName(`На сервере: ${members}`); // свой айди войса
 }
 
 var interval = setInterval(function () { change(); }, 20000  ); // время обновления в миллисекундах
 
-client.login('NzQ0MjE3Njc1MjczODYzMzgw.XzgAuA.VH4SsVsTs1UtA_OO2FwxjizZPRg') // токен вашего бота
+client.login('OTE4MDcwMjY2MjA5MzcwMTEy.YbB5kA.02v9SbuwrJfwtrC6mpyDmhcU_EA') // токен вашего бота
 
 // Хотите, чтобы ваш бот работал 24/7 бесплатно? Смотрите это видео: https://www.youtube.com/watch?v=wxdl4QK0am4
 
