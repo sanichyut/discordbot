@@ -82,7 +82,7 @@ async function change() {
     client.channels.cache.get("АЙДИ СЕРВЕРА").setName(`На сервере: ${members}`); // свой айди войса
 }
 
-var interval = setInterval(function () { change(); }, 20000  ); // время обновления в миллисекундах
+var interval = setInterval(function () { change(); }, 200  ); // время обновления в миллисекундах
 
 client.login('NzQ0MjE3Njc1MjczODYzMzgw.XzgAuA.VH4SsVsTs1UtA_OO2FwxjizZPRg') // токен вашего бота
 
